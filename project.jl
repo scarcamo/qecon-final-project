@@ -297,29 +297,50 @@ gini_assets_reform = gini_coefficient(problem0.a_grid, vec(λ_a_reform))
 gini_income_reform = gini_coefficient(income_reform, problem0.λ_z)
 println("Reform Gini coefficients: Assets = $(gini_assets_reform), Income = $(gini_income_reform)")
 
+# Compute average income ȳ (since E[z] = 1, this simplifies to just w)
+y_bar0 = w_target  # For λ = 0
+y_bar_reform = w_eq  # For λ = 0.15
+
+# Compute total tax revenue (government revenue) for each regime
+function compute_G(w, τ, λ, λ_z, z_vec)
+    y_i = w .* z_vec  # Pre-tax labor income
+    tax_paid = y_i .- (1 - τ) .* y_i .^ (1 - λ) .* w^λ  # Apply tax function
+    return sum(tax_paid .* λ_z)  # Aggregate across all individuals
+end
+
+G0 = compute_G(w_target, τ0, 0.0, problem0.λ_z, problem0.z_vec)  # λ = 0 case
+G_reform = compute_G(w_eq, τ_eq, λ_tax_reform, problem0.λ_z, problem0.z_vec)  # λ = 0.15 case
+
+
+
 #########################
 # --- Plots
 #########################
 
 # Plot value functions for baseline vs. reform for a mid productivity state (e.g., 3rd state)
-plot(problem0.a_grid, V0[:,3], label="V (λ=0)", lw=2, xlabel="Assets", ylabel="Value", title="Value Functions")
+plot(problem0.a_grid, V0[:,3], label="V (λ=0)", lw=2, xlabel="Assets", ylabel="Value", title="Value Functions", size=(900,600), margin=20Plots.px)
 plot!(problem0.a_grid, V_reform[:,3], label="V (λ=0.15)", lw=2)
+savefig("0. value functions.png")
 
 # Plot policy functions (asset savings) for baseline vs. reform for the lowest and mid productivity states
-p1 = plot(problem0.a_grid, policy_a0[:,1], label="Policy a' (λ=0, low z)", lw=2, xlabel="Assets", ylabel="a'", title="Policy Functions")
+p1 = plot(problem0.a_grid, policy_a0[:,1], label="Policy a' (λ=0, low z)", lw=2, xlabel="Assets", ylabel="a'", title="Policy Functions", size=(900,600), margin=20Plots.px)
 plot!(problem0.a_grid, policy_a0[:,3], label="Policy a' (λ=0, mid z)", lw=2)
 plot!(problem0.a_grid, policy_a_reform[:,1], label="Policy a' (λ=0.15, low z)", lw=2, linestyle=:dash)
 plot!(problem0.a_grid, policy_a_reform[:,3], label="Policy a' (λ=0.15, mid z)", lw=2, linestyle=:dash)
+savefig(p1, "policy_functions.png")
 
 # Plot marginal distribution of assets (summing over productivity)
-p2 = plot(problem0.a_grid, vec(λ_a0), label="λ(a) (λ=0)", lw=2, xlabel="Assets", ylabel="Density", title="Asset Distribution")
+p2 = plot(problem0.a_grid, vec(λ_a0), label="λ(a) (λ=0)", lw=2, xlabel="Assets", ylabel="Density", title="Asset Distribution", size=(900,600), margin=20Plots.px)
 plot!(problem0.a_grid, vec(λ_a_reform), label="λ(a) (λ=0.15)", lw=2, linestyle=:dash)
+savefig(p2, "asset_distribution.png")
 
 # Plot Lorenz curves for after-tax labor income
 cum_pop0, cum_income0 = lorenz_curve(income0, problem0.λ_z)
 cum_pop_reform, cum_income_reform = lorenz_curve(income_reform, problem0.λ_z)
-p3 = plot(cum_pop0, cum_income0, label="Lorenz Income (λ=0)", lw=2, xlabel="Cumulative Population", ylabel="Cumulative Income", title="Lorenz Curves")
+p3 = plot(cum_pop0, cum_income0, label="Lorenz Income (λ=0)", lw=2, xlabel="Cumulative Population", ylabel="Cumulative Income", title="Lorenz Curves", size=(900,600), margin=20Plots.px)
 plot!(cum_pop_reform, cum_income_reform, label="Lorenz Income (λ=0.15)", lw=2, linestyle=:dash)
+savefig(p3, "lorenz_income.png")
+
 
 # Plot Lorenz curves for assets
 λ_a0_vec = vec(λ_a0)
@@ -328,19 +349,41 @@ lorenz_a0 = cumsum(problem0.a_grid .* λ_a0_vec) / sum(problem0.a_grid .* λ_a0_
 λ_a_reform_vec = vec(λ_a_reform)
 pops_a_reform = cumsum(λ_a_reform_vec) / sum(λ_a_reform_vec)
 lorenz_a_reform = cumsum(problem0.a_grid .* λ_a_reform_vec) / sum(problem0.a_grid .* λ_a_reform_vec)
-p4 = plot(pops_a0, lorenz_a0, label="Lorenz Assets (λ=0)", lw=2, xlabel="Cumulative Population", ylabel="Cumulative Assets", title="Lorenz Curves for Assets")
+p4 = plot(pops_a0, lorenz_a0, label="Lorenz Assets (λ=0)", lw=2, xlabel="Cumulative Population", ylabel="Cumulative Assets", title="Lorenz Curves for Assets", size=(900,600), margin=20Plots.px)
 plot!(pops_a_reform, lorenz_a_reform, label="Lorenz Assets (λ=0.15)", lw=2, linestyle=:dash)
+
+savefig(p4, "lorenz_assets.png")
+
+
 
 #########################
 # --- Summary Output
 #########################
 
-println("\n--- Summary Statistics ---")
-println("Baseline (λ=0):")
-println("  r = $r0, w = $w_target, τ = $τ0")
-println("  Capital-to-Output ratio: $(K_target/Y_target)")
-println("  Gini: Assets = $(gini_assets0), Income = $(gini_income0)")
-println("\nReform (λ=0.15):")
-println("  r = $(r_eq), w = $(w_eq), τ = $(τ_eq)")
-println("  Capital-to-Output ratio: $(K_eq/Y_eq)")
-println("  Gini: Assets = $(gini_assets_reform), Income = $(gini_income_reform)")
+using PrettyTables
+
+# Print results
+println("\n--- Government Revenue Verification ---")
+println("Baseline (λ=0): G = ", G0)
+println("Reform (λ=0.15): G = ", G_reform)
+println("Revenue Change: ", G_reform - G0)
+
+data = [
+    "Interest rate r"           round(r0, digits=4)              round(r_eq, digits=4)
+    "Wage rate w"              round(w_target, digits=4)        round(w_eq, digits=4)
+    "Tax rate τ"               round(τ0, digits=4)              round(τ_eq, digits=4)
+    "Capital-to-Output ratio"  round(K_target/Y_target, digits=4) round(K_eq/Y_eq, digits=4)
+    "Gini after-tax income"    round(gini_income0, digits=4)    round(gini_income_reform, digits=4)
+    "Gini assets"              round(gini_assets0, digits=4)    round(gini_assets_reform, digits=4)
+    "Government revenue"              round(G0, digits=4)    round(G_reform, digits=4)
+]
+
+headers = ["Statistic", "Baseline (λ=0.0)", "Reform (λ=0.15)"]
+
+pretty_table(data, 
+    header=headers,
+    alignment=:l, 
+    hlines=[:begin, :header, :end], 
+    tf=tf_unicode) 
+
+

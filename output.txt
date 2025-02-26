@@ -1,0 +1,303 @@
+Baseline firm: K = 5.002519677622466, w = 1.0005039355244936, Y = 1.5007559032867401
+Household VFI converged in 69 iterations with diff = 8.609485746546852e-7
+Household VFI converged in 1000 iterations with diff = 2.043513535454622e-5
+Household VFI converged in 135 iterations with diff = 9.106556149163225e-7
+Household VFI converged in 237 iterations with diff = 9.813655594825832e-7
+Household VFI converged in 173 iterations with diff = 9.561455271978048e-7
+Household VFI converged in 152 iterations with diff = 9.158457885405369e-7
+Household VFI converged in 143 iterations with diff = 9.158629268313234e-7
+Household VFI converged in 147 iterations with diff = 9.509802509910514e-7
+Household VFI converged in 145 iterations with diff = 9.309686106462323e-7
+Household VFI converged in 144 iterations with diff = 9.227472332895559e-7
+Household VFI converged in 144 iterations with diff = 9.757584109593154e-7
+Household VFI converged in 145 iterations with diff = 9.051508698121324e-7
+Household VFI converged in 145 iterations with diff = 9.179713345019991e-7
+Household VFI converged in 145 iterations with diff = 9.115335330989183e-7
+Household VFI converged in 145 iterations with diff = 9.083470047244191e-7
+Household VFI converged in 145 iterations with diff = 9.067467203749402e-7
+Household VFI converged in 145 iterations with diff = 9.075464220131835e-7
+Household VFI converged in 145 iterations with diff = 9.079465712602541e-7
+Household VFI converged in 145 iterations with diff = 9.081467453597725e-7
+Household VFI converged in 145 iterations with diff = 9.080466440991586e-7
+Household VFI converged in 145 iterations with diff = 9.079965934688516e-7
+Household VFI converged in 145 iterations with diff = 9.080216329948598e-7
+Household VFI converged in 145 iterations with diff = 9.080341385470092e-7
+Household VFI converged in 145 iterations with diff = 9.080278857709345e-7
+Household VFI converged in 145 iterations with diff = 9.080247878046066e-7
+Household VFI converged in 145 iterations with diff = 9.080263225769158e-7
+Household VFI converged in 145 iterations with diff = 9.080255551907612e-7
+Household VFI converged in 145 iterations with diff = 9.080259246729838e-7
+Household VFI converged in 145 iterations with diff = 9.080260952032404e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080259815164027e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260099381121e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Calibrated β (λ=0): 0.902257197594668
+Household VFI converged in 145 iterations with diff = 9.080260383598215e-7
+Baseline (λ=0): Aggregate household assets = 5.002530769657844, Target = 5.002519677622466
+Baseline Gini coefficients: Assets = 0.605858372466866, Income = 0.31396996769252705
+
+
+Household VFI converged in 141 iterations with diff = 9.572043921934892e-7
+Household VFI converged in 141 iterations with diff = 9.571751036219212e-7
+Household VFI converged in 141 iterations with diff = 9.915303280649823e-7
+Household VFI converged in 141 iterations with diff = 9.600253605412945e-7
+Household VFI converged in 142 iterations with diff = 9.023137721442254e-7
+Household VFI converged in 142 iterations with diff = 9.023137721442254e-7
+Household VFI converged in 141 iterations with diff = 9.900441426680118e-7
+Household VFI converged in 141 iterations with diff = 9.900441426680118e-7
+Household VFI converged in 141 iterations with diff = 9.884282974326197e-7
+Household VFI converged in 141 iterations with diff = 9.886523457680596e-7
+Household VFI converged in 141 iterations with diff = 9.887974101729924e-7
+Household VFI converged in 141 iterations with diff = 9.887912710837554e-7
+Household VFI converged in 141 iterations with diff = 9.88786254652041e-7
+Household VFI converged in 141 iterations with diff = 9.887901626370876e-7
+Household VFI converged in 141 iterations with diff = 9.887890257687104e-7
+Household VFI converged in 141 iterations with diff = 9.88787803635205e-7
+Household VFI converged in 141 iterations with diff = 9.88788798395035e-7
+Household VFI converged in 141 iterations with diff = 9.887883578585388e-7
+Household VFI converged in 141 iterations with diff = 9.887881162740086e-7
+Household VFI converged in 141 iterations with diff = 9.887880310088804e-7
+Household VFI converged in 141 iterations with diff = 9.887881162740086e-7
+Household VFI converged in 141 iterations with diff = 9.887880878522992e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880310088804e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880878522992e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880736414445e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880310088804e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880310088804e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880736414445e-7
+Household VFI converged in 141 iterations with diff = 9.887880310088804e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+Household VFI converged in 141 iterations with diff = 9.887880594305898e-7
+0.049752114768565184
+
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+(-4.82817131635116e-5, 0.24056033824911083, 4.350803405255235, 0.9550197493380738, 1.4325296240071104, 4.350755123542071)
+
+Reform Economy (λ=0.15): Equilibrium r = 0.049752114768565184, w = 0.9550197493380738, τ = 0.24056033824911083
+
+Reform Economy: K = 4.350803405255235, Y = 1.4325296240071104, Aggregate household assets = 4.350755123542071
+
+Reform Capital-to-Output ratio: 3.0371472480164496
+
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+
+Household VFI converged in 141 iterations with diff = 9.88788045219735e-7
+([-136.0470462332358 -56.294560433187115 … -4.000212601021412 3.6366890627478003; -118.9587829950801 -53.19824528336967 … -3.8612875702335834 3.6625548824663623; … ; 6.236611291577198 6.373127457852339 … 7.077986754842232 7.714492022469694; 6.243861740876133 6.379923687746832 … 7.082564391817214 7.716658917160599], [0.0 0.0 … 0.561122244488978 2.4849699398797593; 0.0 0.0 … 0.6412825651302605 2.565130260521042; … ; 38.55711422845691 38.476953907815634 … 38.95791583166333 40.0; 38.637274549098194 38.55711422845691 … 39.03807615230461 40.0], [0.03974620382513087 0.12806456848553255 … 0.7684001615263508 1.7988281799936283; 0.12389466993884349 0.21221303459924518 … 0.7723883069987809 1.8028163254660585; … ; 3.3885680999971157 3.5570467852987946 … 4.277542698980895 6.189734244502283; 3.3925562454695424 3.5610349307712283 … 4.2815308444533215 6.273882710615993], [0.013379598597481857 0.0662478642751822 … 5.194087665551557e-8 7.942948971478073e-18; 0.0007377850713599775 0.0052958597811608365 … 0.0002573968222257545 7.376548571160864e-10; … ; 1.2425768323907417e-34 4.446611698254152e-20 … 5.422363387013885e-6 3.0500184590558702e-5; 2.642471940744207e-33 9.45619324111671e-19 … 0.00011531233103014412 0.0006486189011990686], 4.350755123542071)
+
+500×1 Matrix{Float64}:
+ 0.08566110772518488
+ 0.012273429578945038
+ 0.012449718719435237
+ 0.01267219193423091
+ 0.012942905350588674
+ 0.013264490410318887
+ 0.013640255138823328
+ 0.014074360748923875
+ 0.08253190911952268
+ 0.010314513773729484
+ 0.010690728689476525
+ 0.011573941541848575
+ 0.011494253045979149
+ ⋮
+ 0.0001557089073217702
+ 7.821210495147027e-6
+ 1.999719635383721e-5
+ 4.562739684714889e-5
+ 2.353571187007398e-5
+ 2.0672233112426865e-5
+ 5.764926269648345e-6
+ 3.654430547493909e-5
+ 2.3619239971890116e-5
+ 5.872299125043751e-5
+ 1.7551775602674078e-5
+ 3.5922686120258915e-5
+ 0.0007639341699805286
+
+5-element Vector{Float64}:
+ 0.03974620382513087
+ 0.12806456848553255
+ 0.41263144962326864
+ 1.3295224060153288
+ 4.283798119873388
+
+0.593893328459075
+
+0.2237427285439183
+
+Reform Gini coefficients: Assets = 0.593893328459075, Income = 0.2237427285439183
+
+
+
+
+
+
+
+
+
+
+([0.030463508034052678, 0.2665963020829887, 0.7334036979170114, 0.9695364919659474, 0.9999999999999998], [0.0010000080034002704, 0.03170321865561378, 0.27212241337702187, 0.7538390436055101, 1.0000000000000002])
+
+([0.030463508034052678, 0.2665963020829887, 0.7334036979170114, 0.9695364919659474, 0.9999999999999998], [0.0018111948550790012, 0.04704622704924447, 0.3351770111379067, 0.8047915934551215, 0.9999999999999999])
+
+
+
+500-element Vector{Float64}:
+ 0.03315401840604205
+ 0.05545164978316693
+ 0.012262248092937156
+ 0.012450687334846456
+ 0.012685727102509804
+ 0.012969589584392933
+ ⋮
+ 5.50881164539122e-5
+ 9.672906307677144e-5
+ 9.285703923801383e-5
+ 3.244980181182333e-5
+ 0.0033827857324444954
+
+500-element Vector{Float64}:
+ 0.03315401840604192
+ 0.08860566818920865
+ 0.10086791628214577
+ 0.11331860361699216
+ 0.12600433071950193
+ 0.1389739203038948
+ ⋮
+ 0.9963951783634283
+ 0.9964919074265051
+ 0.9965847644657431
+ 0.9966172142675549
+ 0.9999999999999993
+
+500-element Vector{Float64}:
+ 0.0
+ 0.000888554659906828
+ 0.001281534047409937
+ 0.0018800617536376657
+ 0.002693163760544099
+ 0.0037322842652860264
+ ⋮
+ 0.9711841620740354
+ 0.9719529531523956
+ 0.9726924577831078
+ 0.9729514048932011
+ 1.0000000000000004
+
+500-element Vector{Float64}:
+ 0.08566110772518488
+ 0.012273429578945038
+ 0.012449718719435237
+ 0.01267219193423091
+ 0.012942905350588674
+ 0.013264490410318887
+ ⋮
+ 2.3619239971890116e-5
+ 5.872299125043751e-5
+ 1.7551775602674078e-5
+ 3.5922686120258915e-5
+ 0.0007639341699805286
+
+500-element Vector{Float64}:
+ 0.08566110772518436
+ 0.09793453730412931
+ 0.11038425602356448
+ 0.12305644795779531
+ 0.13599935330838392
+ 0.14926384371870272
+ ⋮
+ 0.9991238683770459
+ 0.9991825913682963
+ 0.999200143143899
+ 0.9992360658300193
+ 0.9999999999999998
+
+500-element Vector{Float64}:
+ 0.0
+ 0.00022613133179866544
+ 0.0006848900603897741
+ 0.0013853250008758024
+ 0.002339189250618542
+ 0.003561144720694193
+ ⋮
+ 0.9919495699766576
+ 0.9924862119669092
+ 0.9926469328285369
+ 0.9929765371914699
+ 1.0000000000000004
+
+
+
+
+--- Summary Statistics ---
+Baseline (λ=0):
+  r = 0.04, w = 1.0005039355244936, τ = 0.3
+  Capital-to-Output ratio: 3.3333333333333326
+  Gini: Assets = 0.605858372466866, Income = 0.31396996769252705
+
+Reform (λ=0.15):
+  r = 0.049752114768565184, w = 0.9550197493380738, τ = 0.24056033824911083
+  Capital-to-Output ratio: 3.0371472480164496
+  Gini: Assets = 0.593893328459075, Income = 0.2237427285439183
+
+
+
+
+┌─────────────────────────┬──────────────────┬─────────────────┐
+│ Statistic               │ Baseline (λ=0.0) │ Reform (λ=0.15) │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│ Interest rate r         │ 0.04             │ 0.0498          │
+│ Wage rate w             │ 1.0005           │ 0.955           │
+│ Tax rate τ              │ 0.3              │ 0.2406          │
+│ Capital-to-Output ratio │ 3.3333           │ 3.0371          │
+│ Gini after-tax income   │ 0.314            │ 0.2237          │
+│ Gini assets             │ 0.6059           │ 0.5939          │
+│ Government revenue      │ 0.3002           │ 0.2865          │
+└─────────────────────────┴──────────────────┴─────────────────┘

@@ -274,7 +274,8 @@ function market_excess_r(r, problem::HAProblemTax, firm::FirmParams, λ_tax)
 end
 
 # Find equilibrium r (using problem0 with calibrated β) such that market clears
-r_eq = find_zero(r -> market_excess_r(r, problem0, firm, λ_tax_reform)[1], (-0.02, 0.04))
+r_eq = find_zero(r -> market_excess_r(r, problem0, firm, λ_tax_reform)[1], 0.02)
+
 excess, τ_eq, K_eq, w_eq, Y_eq, agg_assets_eq = market_excess_r(r_eq, problem0, firm, λ_tax_reform)
 println("Reform Economy (λ=0.15): Equilibrium r = $r_eq, w = $w_eq, τ = $τ_eq")
 println("Reform Economy: K = $K_eq, Y = $Y_eq, Aggregate household assets = $agg_assets_eq")
@@ -286,6 +287,10 @@ _, _, _, _, _, agg_assets_temp, V_reform, policy_a_reform, policy_c_reform, λ_d
         V, pa, pc, λd, agg = solve_household(problem0, r_eq, w_eq, τ_eq, λ_tax_reform)
         (V, pa, pc, λd, agg)
     end
+
+V_reform, policy_a_reform, policy_c_reform, λ_dist_reform, agg_assets_temp = solve_household(problem0, r_eq, w_eq, τ_eq, λ_tax_reform)
+
+
 λ_a_reform = sum(λ_dist_reform, dims=2)
 income_reform = [ (1-τ_eq)*w_eq*(z^(1-λ_tax_reform)) for z in problem0.z_vec ]
 gini_assets_reform = gini_coefficient(problem0.a_grid, vec(λ_a_reform))
